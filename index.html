@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"rel="stylesheet"/>
+</head>
+<body>
+    <div class="container">
+        <div class="input">
+            <input type="text" id="passwordInput" value=""><i onclick="copied()" class="ri-file-copy-line" id="icon"></i>
+        </div>
+        <div class="option">
+            <div class="text">
+                <p>Password Length</p><input type="number" value="8" id="passwordLength">
+            </div>
+            <div class="text">
+                <p>Including UpperCase</p><input type="checkbox" id="upper">
+            </div>
+            <div class="text">
+                <p>Including LowerCase</p><input type="checkbox" id="Lower">
+            </div>
+            <div class="text">
+                <p>Including Number</p><input type="checkbox" id="num">
+            </div>
+            <div class="text">
+                <p>Including Symbol</p><input type="checkbox" id="sym">
+            </div>
+            <div class="text">
+                <button onclick="myfun()">Generate Password</button>
+            </div>
+        </div>
+        
+    </div>
+    <script src="first.js"></script>
+</body>
+</html>
